@@ -5,7 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity
+@Entity //inidca qeu o objeto da classe deve ser manipulada pe,o jpa
 public class Pessoa {
 	
 	@Id  
@@ -15,7 +15,6 @@ public class Pessoa {
       
 	private long id;
 	private String nome;
-	private int idade;
 	
 	
 	
@@ -31,12 +30,7 @@ public class Pessoa {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public int getIdade() {
-		return idade;
-	}
-	public void setIdade(int idade) {
-		this.idade = idade;
-	}
+	
 	
 	
 	
