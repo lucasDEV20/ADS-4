@@ -15,6 +15,11 @@ public class Pessoa {
       
 	private long id;
 	private String nome;
+	private String sexo;
+	private String CorDeclarada;
+	private int idade;
+	private int peso;
+	
 	
 	
 	
@@ -30,6 +35,32 @@ public class Pessoa {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+	public String getSexo() {
+		return sexo;
+	}
+	public void setSexo(String sexo) {
+		this.sexo = sexo;
+	}
+	public String getCorDeclarada() {
+		return CorDeclarada;
+	}
+	public void setCorDeclarada(String corDeclarada) {
+		CorDeclarada = corDeclarada;
+	}
+	public int getIdade() {
+		return idade;
+	}
+	public void setIdade(int idade) {
+		this.idade = idade;
+	}
+	public int getPeso() {
+		return peso;
+	}
+	public void setPeso(int peso) {
+		this.peso = peso;
+	}
+	
+	
 	
 	
 	

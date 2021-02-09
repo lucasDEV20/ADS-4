@@ -24,8 +24,8 @@ public class PessoaRest {
 	}//CHAMANDO A INFO
 	
 	@PostMapping //expoe o metodo POST
-	public void post(@RequestBody Pessoa pessoa) { //@RequestBody - marca o objeto como corpo da mensagem POST
-		pessoaDao.save(pessoa);
+	public Pessoa Put (@RequestBody Pessoa pessoa) { //@RequestBody - marca o objeto como corpo da mensagem POST
+		return pessoaDao.save(pessoa);
 		
 		//POSTANDO A INFORMAÇAO 
 	}
