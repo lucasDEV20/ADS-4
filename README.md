@@ -1,3 +1,5 @@
+
+
 <h1 align="center">
     < 📜 > <br>
 REPOSITÓRIO DE MATÉRIAS
@@ -18,9 +20,11 @@ REPOSITÓRIO DE MATÉRIAS
 
 ## 📚 Contexto
 
+
+
 - SEMESTRE LETIVO: 2021/1
 
----
+
 
 ### ESTRUTURA
 
@@ -29,7 +33,7 @@ REPOSITÓRIO DE MATÉRIAS
 ###ADS-4 (ANALISE E DESENVOLVIMENTO DE SISTEMAS)
 
 
-. . . 
+```
 ----------------------------------------------------------------
 DW - desenvolvimento de sistemas para web - francisco calaça 
 -
@@ -49,8 +53,8 @@ TE - tecnologias emergentes
 -
 IHC - interface homem computador
 ----------------------------------------------------------------
+```
 
-. . . 
 
 ### HORÁRIOS DE AULAS
 
