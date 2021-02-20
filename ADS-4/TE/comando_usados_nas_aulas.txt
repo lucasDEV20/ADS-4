@@ -1,0 +1,76 @@
+sudo rm -rf folderName
+
+exclui o diretorio que nao esta vazio
+
+Use o comando abaixo:
+rm -rf lampp
+Exclui todos os arquivos e pastas contidos no lamppdiretório.
+
+Caso o usuário não tenha permissão para excluir a pasta:
+Adicione sudono início do comando:
+
+sudo rm -rf folderName
+Caso contrário, sem sudovocê, será devolvida a permissão negada. E é uma boa prática tentar não usar -fao excluir um diretório:
+
+sudo rm -r folderName
+Nota: isso pressupõe que você já esteja no mesmo nível da pasta que deseja excluir no terminal, caso contrário:
+
+sudo rm -r /path/to/folderName
+FYI: você pode usar letras -f, -r, -v:
+
+-f = para ignorar arquivos inexistentes, nunca solicitar
+-r = remover diretórios e seu conteúdo recursivamente
+-v = para explicar o que está sendo feito
+
+sempre usar ponto e virgula para realizar varios comandos de uma unica vez 
+exemplo  pwd -LP; ls; cd /home; cd /; cd /bin; ls; cd /; clear
+
+existre tbm o && (e comercial)
+
+O caracter ``&'' colocado ao final da linha de comandos instrui o shell para disparar o comando em background, a fim de que se possa continuar usando o shell mesmo antes desse comando encerrar a sua execução
+
+Instalar tree
+Para instalar tree no Ubuntu você precisa executar os seguintes comandos no terminal:
+
+sudo apt-get update
+sudo apt-get install tree
+Informações do pacote tree
+nome	tree
+seção	utils
+descrição	
+displays an indented directory tree, in color
+
+site	mama.indstate.edu/ users/ ice/ tree/ 
+responsável	ubuntu-devel-discuss@lists.ubuntu.com
+
+TREE
+tree [opções] [diretório]
+
+Descrição
+Este utilitário lista o conteúdo de um diretório usando o formato de árvore. Ele tem a mesma função do comando ls. A diferença consiste na maneira como as informações são exibidas.
+
+Algumas opções do comando
+-a : lista todos os arquivos, inclusive os arquivos ocultos.
+-d : lista somente os subdiretórios.
+-f : exibe o caminho completo dos arquivos.
+-p : exibe as permissões dos arquivos.
+−−help : exibe as opções do utilitário.
+−−version : mostra informações sobre o utilitário.
+Exemplos
+O comando
+tree /etc
+
+exibe arquivos e diretórios que estão abaixo do diretório /etc.
+
+Para ver a organização apenas dos diretórios que estã abaixo do diretório atual, digite
+tree -d
+
+Observações
+Caso o usuário não forneça o nome do diretório, assume-se o diretório atual.
+Caso o aplicativo não esteja instalado, digite
+sudo apt-get install tree
+
+mkdir 
+
+mkdir sistemas; cd /sistemas; mkdir livre; cd /livre; mkdir linux; cd /linux; mkdir debian; cd /debian; cd debian; mkdir unix; cd /unix
+
