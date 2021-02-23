@@ -1,4 +1,4 @@
-package com.lucas.backend;
+package com.lucas.backend.entidade;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
