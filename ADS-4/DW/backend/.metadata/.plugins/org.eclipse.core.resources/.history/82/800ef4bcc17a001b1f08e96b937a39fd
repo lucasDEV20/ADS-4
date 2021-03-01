@@ -1,0 +1,13 @@
+package com.lucas.backend.dao;
+
+import org.springframework.stereotype.Repository;
+
+public interface TurmaDao {
+	
+	@Repository
+	public interface TurmaDao extends JpaRepository<turma, Long>{
+
+	}
+
+
+}
