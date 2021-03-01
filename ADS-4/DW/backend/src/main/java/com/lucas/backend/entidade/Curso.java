@@ -6,34 +6,44 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+@Entity
 public class Curso {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
-	@Entity
-	public class Cliente {
+	private long id;
+	private String nome;
+	
+    public Curso() {
+    }
+
+    public Curso(Long id, String nome) {
+        this.id = id;
+        this.nome = nome;
+    }
+	
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) throws Exception {
 		
-		@Id
-		@GeneratedValue(strategy = GenerationType.IDENTITY)
-		private Long id;
+		if (nome == null) {
+			throw new Exception("Curso inválido.");
+		}
+		if (nome.isEmpty() || nome.length() < 5) {
+			throw new Exception("Curso inválido.");
+		}
 		
-		@Column(nullable = false)
-		private String nome;
+		this.nome = nome;
+	}
 
-		public Long getId() {
-			return id;
-		}
+	public long getId() {
+		return id;
+	}
 
-		public void setId(Long id) {
-			this.id = id;
-		}
-
-		public String getNome() {
-			return nome;
-		}
-
-		public void setNome(String nome) {
-			this.nome = nome;
-		}
-
-
-}
+	public void setId(long id) {
+		this.id = id;
+	}
 }

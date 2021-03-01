@@ -1,4 +1,4 @@
-um telefone puvlico possui certas funcionalidades 
+um telefone publico possui certas funcionalidades 
 
 -relizar ligaçoes
 - e pra realizar estas ligaçoes e necessarios um cartao, ou moeda depedendo 
