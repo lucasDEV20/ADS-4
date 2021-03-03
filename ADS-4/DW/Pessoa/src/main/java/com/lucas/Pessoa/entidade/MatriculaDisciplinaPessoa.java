@@ -17,6 +17,7 @@ public class MatriculaDisciplinaPessoa {
 
 	@ManyToOne
 	private Disciplina disciplina;
+	
 	@ManyToOne
 	private Pessoa pessoa;
 

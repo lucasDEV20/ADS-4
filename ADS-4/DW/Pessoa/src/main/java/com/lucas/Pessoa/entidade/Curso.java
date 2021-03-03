@@ -1,14 +1,10 @@
 package com.lucas.Pessoa.entidade;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
+
 
 @Entity
 public class Curso {
@@ -17,11 +13,8 @@ public class Curso {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
 	private long id;
-	private String nome;
 	
-	@OneToMany
-	@JoinColumn(name = "curso_id")
-	private List<Turma> turmas = new ArrayList<>();
+	private String nome;
 	
     public Curso() {
     }
@@ -36,14 +29,7 @@ public class Curso {
 	}
 
 	public void setNome(String nome) throws Exception {
-		
-		if (nome == null) {
-			throw new Exception("Curso inválido.");
-		}
-		if (nome.isEmpty() || nome.length() < 5) {
-			throw new Exception("Curso inválido.");
-		}
-		
+
 		this.nome = nome;
 	}
 
