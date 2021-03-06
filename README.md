@@ -25,10 +25,8 @@ REPOSITÓRIO DE MATÉRIAS
 ---
 
 ### ESTRUTURA
-
-
-
 ###ADS-4 (ANALISE E DESENVOLVIMENTO DE SISTEMAS)
 ![WhatsApp Image 2021-02-01 at 22 19 03](https://user-images.githubusercontent.com/55209015/110192928-c6cf0f80-7e0f-11eb-91bf-ac606c1e7aff.jpeg)
+
 
 
