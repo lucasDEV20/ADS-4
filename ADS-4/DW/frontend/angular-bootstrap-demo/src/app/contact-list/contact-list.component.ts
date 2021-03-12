@@ -10,12 +10,16 @@ export class ContactListComponent implements OnInit {
 
   contacts;
   selectedContact;
+
   constructor(public dataService: DataService) { }
+
   ngOnInit() {
-  this.contacts = this.dataService.getContacts();
+    this.contacts = this.dataService.getContacts();
   }
-  public selectContact(contact){
-  this.selectedContact = contact;
+
+  public selectContact(contact) {
+    this.selectedContact = contact;
   }
+
 }
 
