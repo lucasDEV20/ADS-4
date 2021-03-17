@@ -13,10 +13,12 @@ export class DataService {
   ];
 
 
-  constructor() { }
+
+  constructor(private http: HttpClient) { }
 
   public getContacts(): Array<{ id, name, description, email }> {
-    return this.contacts;
+    
+  return this.http.get('')
   }
 
   public createContact(contact: { id, name, description, email }) {
