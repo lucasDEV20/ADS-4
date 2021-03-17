@@ -14,7 +14,9 @@ export class ContactListComponent implements OnInit {
   constructor(public dataService: DataService) { }
 
   ngOnInit() {
-    this.contacts = this.dataService.getContacts();
+    this.dataService.getContacts().subscribe(resposta => {
+      this.contacts = resposta;
+    });
   }
 
   public selectContact(contact) {
@@ -22,4 +24,5 @@ export class ContactListComponent implements OnInit {
   }
 
 }
+
 
