@@ -15,7 +15,7 @@ export class DataService {
   }
 
   public createContact(contact): Observable<any> {
-    return this.http.post("http://localhost:8080/contact", contact);
+    return this.http.post(" ", contact);
   }
 
 }
