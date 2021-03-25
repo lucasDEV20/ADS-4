@@ -1,0 +1,20 @@
+package testes;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import codigos.Cauculadora;
+
+class testeSoma {
+
+	@Test
+	void testeSoma() {
+		System.out.println("testando soma !!!");
+		Cauculadora c = new Cauculadora();
+		double resultado = c.somar(5, 5);
+		assertEquals(10, resultado);
+		
+	}
+
+}

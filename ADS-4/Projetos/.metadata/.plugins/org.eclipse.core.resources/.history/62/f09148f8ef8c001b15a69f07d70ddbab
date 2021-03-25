@@ -1,0 +1,23 @@
+package codigos;
+
+public class calculadora {
+
+	private int resultado = 0;
+
+	public double subtrair(int n1, int n2) {
+		resultado = n1 + n2;
+		return resultado;
+	}
+	public double somar(int n1, int n2) {
+		resultado = n1 + n2;
+		return resultado;
+	}
+	public double multiplicaçao(int n1, int n2) {
+		resultado = n1 * n2;
+		return resultado;
+	}
+	public double divisao(int n1, int n2) {
+		resultado = n1 / n2;
+		return resultado;
+	}
+}

@@ -1,0 +1,46 @@
+package testes;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import codigos.Cauculadora;
+
+class testeSoma {
+
+	@Test
+	void testeSoma() {
+		System.out.println("testando soma !!!");
+		Cauculadora c = new Cauculadora();
+		double resultado = c.somar(5, 5);
+		assertEquals(10, resultado);
+		
+	}
+	
+	void testeSsubtrair() {
+		System.out.println("testando subtrair !!!");
+		Cauculadora c = new Cauculadora();
+		double resultado = c.subtrair(5, 5);
+		assertEquals(0, resultado);
+		
+	}
+
+	void testeMult() {
+		System.out.println("testando multiplicaçao !!!");
+		Cauculadora c = new Cauculadora();
+		double resultado = c.multiplicaçao(5, 5);
+		assertEquals(25, resultado);
+		
+	}
+	
+	void testeDivisao() {
+		System.out.println("testando divisao !!!");
+		Cauculadora c = new Cauculadora();
+		double resultado = c.divisao(5, 5);
+		assertEquals(1, resultado);
+		
+	}
+
+
+
+}

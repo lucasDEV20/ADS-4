@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.lucas.Pessoa.dao.CursoDao"/>
+    <fullyQualifiedTypeName name="com.lucas.Pessoa.entidade.Pessoa"/>
+    <fullyQualifiedTypeName name="com.lucas.Pessoa.dao.PessoaDao"/>
+    <fullyQualifiedTypeName name="com.lucas.Pessoa.dao.MatriculaDisciplinaPessoaDao"/>
+    <fullyQualifiedTypeName name="com.lucas.Pessoa.entidade.MatriculaDisciplinaPessoa"/>
+    <fullyQualifiedTypeName name="com.lucas.Pessoa.dao.TurmaDao"/>
+    <fullyQualifiedTypeName name="com.lucas.Pessoa.entidade.Turma"/>
+    <fullyQualifiedTypeName name="com.lucas.Pessoa.dao.DisciplinaDao"/>
+    <fullyQualifiedTypeName name="com.lucas.Pessoa.entidade.Disciplina"/>
+    <fullyQualifiedTypeName name="com.lucas.Pessoa.entidade.Curso"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.context.properties.ConfigurationProperties"/>
+    <fullyQualifiedTypeName name="springfox.documentation.swagger2.annotations.EnableSwagger2"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="com.lucas.Pessoa.dao.ContactDao"/>
+    <fullyQualifiedTypeName name="com.lucas.Pessoa.entidade.Contact"/>
+</qualifiedTypeNameHistroy>
