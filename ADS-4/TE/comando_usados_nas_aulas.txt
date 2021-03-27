@@ -74,3 +74,313 @@ mkdir
 
 mkdir sistemas; cd /sistemas; mkdir livre; cd /livre; mkdir linux; cd /linux; mkdir debian; cd /debian; cd debian; mkdir unix; cd /unix
 
+ sudo rm -rf  <deleta_diretorio>
+
+
+root@Computador:/home# ls -la
+total 0
+drwxr-xr-x 1 root         root         512 Mar 26 19:02 .
+drwxr-xr-x 1 root         root         512 Mar  5 21:38 ..
+-rw-r--r-- 1 root         root           0 Feb 26 19:10 arq1,touch
+-rw-r--r-- 1 root         root           0 Feb 26 19:10 arq2,
+drwxr-xr-x 1 root         root         512 Feb 26 19:06 arquivo
+drwxr-xr-x 1         1001 vendas       512 Mar 26 19:02 joao
+drwxr-xr-x 1 lucas_araujo lucas_araujo 512 Feb 19 19:17 lucas_araujo
+root@Computador:/home# mkdir fatesg
+root@Computador:/home# ls -la
+total 0
+drwxr-xr-x 1 root         root         512 Mar 26 19:11 .
+drwxr-xr-x 1 root         root         512 Mar  5 21:38 ..
+-rw-r--r-- 1 root         root           0 Feb 26 19:10 arq1,touch
+-rw-r--r-- 1 root         root           0 Feb 26 19:10 arq2,
+drwxr-xr-x 1 root         root         512 Feb 26 19:06 arquivo
+drwxr-xr-x 1 root         root         512 Mar 26 19:11 fatesg
+drwxr-xr-x 1         1001 vendas       512 Mar 26 19:02 joao
+drwxr-xr-x 1 lucas_araujo lucas_araujo 512 Feb 19 19:17 lucas_araujo
+root@Computador:/home# useradd ti1
+root@Computador:/home# groupadd i
+root@Computador:/home# groupdel i
+root@Computador:/home# groupdel ti
+groupdel: group 'ti' does not exist
+root@Computador:/home# groupadd ti
+root@Computador:/home# chown ti1.ti fatesg/ -R
+root@Computador:/home# ls -la
+total 0
+drwxr-xr-x 1 root         root         512 Mar 26 19:11 .
+drwxr-xr-x 1 root         root         512 Mar  5 21:38 ..
+-rw-r--r-- 1 root         root           0 Feb 26 19:10 arq1,touch
+-rw-r--r-- 1 root         root           0 Feb 26 19:10 arq2,
+drwxr-xr-x 1 root         root         512 Feb 26 19:06 arquivo
+drwxr-xr-x 1 ti1          ti           512 Mar 26 19:11 fatesg
+drwxr-xr-x 1 ti1          vendas       512 Mar 26 19:02 joao
+drwxr-xr-x 1 lucas_araujo lucas_araujo 512 Feb 19 19:17 lucas_araujo
+root@Computador:/home# sudo rm -rf fatesg/
+root@Computador:/home# useradd paulo; groupadd compras; mkdir ads
+root@Computador:/home# chown pablo.compras /home/ads -R
+chown: invalid user: ‘pablo.compras’
+root@Computador:/home# userdel paulo
+root@Computador:/home# useradd pablo
+root@Computador:/home# chown pablo.compras /home/ads -R
+root@Computador:/home#
+
+https://www.vivaolinux.com.br/etc/smb.conf-18/
+
+
+adduser adiciona atribtos 
+deluser deleta user e atributo
+useradd cria usuario sem atributo
+userdel deleta
+groupadd <nome_grupo> - adiciona usuario
+groupdel<nome_grupo> - adiciona usuario
+
+chgrp compras ads 
+
+mudar o dono do gupo 
+
+ads era o diretorio
+
+cat /etc/group
+
+mostra quem e o grupo e os menbros do grupo
+ls -la
+
+u
+g 
+o 
+a 
+
+
+root@Computador:/home# mkdir /home/permissao; cd /home/permissao
+root@Computador:/home/permissao# ls -la
+total 0
+drwxr-xr-x 1 root root 512 Mar 26 19:37 .
+drwxr-xr-x 1 root root 512 Mar 26 19:37 ..
+root@Computador:/home/permissao# chmod 0+rw arq
+chmod: invalid mode: ‘0+rw’
+Try 'chmod --help' for more information.
+root@Computador:/home/permissao# chmod o+rw arq
+chmod: cannot access 'arq': No such file or directory
+root@Computador:/home/permissao# touch arq
+root@Computador:/home/permissao# chmod o+rw arq
+root@Computador:/home/permissao#
+
+
+root@Computador:/home# mkdir /home/permissao; cd /home/permissao
+root@Computador:/home/permissao# ls -la
+total 0
+drwxr-xr-x 1 root root 512 Mar 26 19:37 .
+drwxr-xr-x 1 root root 512 Mar 26 19:37 ..
+root@Computador:/home/permissao# chmod 0+rw arq
+chmod: invalid mode: ‘0+rw’
+Try 'chmod --help' for more information.
+root@Computador:/home/permissao# chmod o+rw arq
+chmod: cannot access 'arq': No such file or directory
+root@Computador:/home/permissao# touch arq
+root@Computador:/home/permissao# chmod o+rw arq
+root@Computador:/home/permissao# tree
+.
+└── arq
+
+0 directories, 1 file
+root@Computador:/home/permissao# touch arq2; a+rwx arq2
+a+rwx: command not found
+root@Computador:/home/permissao# chmod a+rwx arq2
+root@Computador:/home/permissao# chmod u+rwx arq2
+root@Computador:/home/permissao# chmod g+rwx arq2
+root@Computador:/home/permissao# chmod o+rwx arq2
+root@Computador:/home/permissao# touch arq3; chmod a-rwx arq3; chmod o-rwx arq3;
+root@Computador:/home/permissao# chmod g-wxr arq3
+root@Computador:/home/permissao# chmod u-wxr arq3
+root@Computador:/home/permissao# ls -la
+total 0
+drwxr-xr-x 1 root root 512 Mar 26 19:56 .
+drwxr-xr-x 1 root root 512 Mar 26 19:37 ..
+-rw-r--rw- 1 root root   0 Mar 26 19:43 arq
+-rwxrwxrwx 1 root root   0 Mar 26 19:52 arq2
+---------- 1 root root   0 Mar 26 19:56 arq3
+
+octal
+root@Computador:/home/permissao# root@Computador:/home/permissao# chmod 421 arq3
+root@Computador:/home/permissao#
+
+chmod  7 arq3
+
+Permissões
+No Linux, as permissões são agrupadas em três atributos principais: leitura, gravação e execução (no caso de arquivos) ou listagem do conteúdo (no caso das pastas). Eles são representados, respectivamente pelas letras r,w, x.
+
+As permissões são definidas de forma separada para o dono, o grupo (que inclui todos os usuários incluídos nele) e para os outros, ou seja, todos os demais usuários do sistema. Em geral, o dono tem acesso completo, o grupo tem permissões variáveis  e os demais apenas podem ler os arquivos, sem fazer qualquer alteração.
+
+A ideia básica da segurança no sistema GNU/Linux é definir o acesso aos arquivos por donos, grupos e outros usuários:
+
+Dono – É a pessoa que criou o arquivo ou o diretório. Normalmente, somente o dono pode modificar as permissões de acesso do arquivo. As permissões de acesso do dono de um arquivo somente se aplicam ao dono do arquivo/diretório. A identificação do dono também é chamada de user id (UID).
+Grupo – Permite que vários usuários diferentes tenham acesso a um mesmo arquivo mesmo não sendo dono daquele arquivo. Por padrão, quando um novo usuário é criado e não especificar nenhum grupo, ele pertencerá ao grupo de mesmo nome do seu usuário. A identificação do grupo é chamada de GID (group id). Um usuário pode pertencer a um ou mais grupos. outros
+Outros – É a categoria de usuários que não são donos ou não pertencem ao grupo do arquivo.
+Quanto aos tipos de permissões que se aplicam ao dono, grupo e outros usuários, temos 3 permissões básicas:
+
+r – Permissão de leitura para arquivos. Caso for um diretório, permite listar seu conteúdo (através do comando ls, por exemplo).
+w – Permissão de gravação para arquivos. Caso for um diretório, permite a gravação de arquivos ou outros diretórios dentro dele. Para que um arquivo/diretório possa ser apagado, é necessário o acesso a gravação.
+x – Permite executar um arquivo (caso seja um programa executável). Caso seja um diretório, permite que seja acessado através do comando cd.
+
+Verificando as Permissões
+As permissões de acesso a um arquivo/diretório podem ser visualizadas com o uso do comando ls -l. As 3 letras (rwx) são agrupadas da seguinte forma:
+
+drwxr-xr– root root teste
+
+A primeira letra diz qual é o tipo do arquivo. Caso tiver um “d” é um diretório, um “l” um link a um arquivo no sistema, um “-“ quer dizer que é um arquivo comum, etc.
+
+Da segunda a quarta letra (rwx) dizem qual é a permissão de acesso ao dono do arquivo. Neste caso root ele tem a permissão de ler (r – read), gravar (w – write) e executar (x – execute) o arquivo computadores.
+
+Da quinta a sétima letra (r-x) diz qual é a permissão de acesso ao grupo do arquivo. Neste caso todos os usuários que pertencem ao grupo root tem a permissão de ler (r), e também executar (x) o arquivo teste. Lembre-se que quanto um usuário é criado, um grupo com o nome do usuário também é criado. Isso explica o fato do “root root”, que indica que o arquivo pertence ao usuário root e ao grupo root.
+
+
+ 
+Da oitava a décima letra (r–) diz qual é a permissão de acesso para os outros usuários. Neste caso todos os usuários que não são donos do arquivo teste tem a permissão somente para ler (r) o arquivo.
+
+O primeiro root indica o nome do dono do arquivo.
+
+O segundo root indica o nome do grupo que o arquivo pertence.
+
+A palavra teste indica o nome da pasta.
+
+
+
+
+Ajustando as Permissões
+Para ajustar as permissões de acesso de um arquivo/diretório, utilizamos os comandos chmod e chown. O primeiro permite ajustar as permissões de arquivos e pastas, enquanto o segundo permite transferir a posse, dizendo a qual usuário e a qual grupo determinada pasta ou arquivo pertence.
+
+Para que os usuários do grupo professores possam alterar o conteúdo da pasta, o primeiro passo é alterar as permissões, transferindo a posse do grupo root para o grupo professores. Nesse caso, não precisamos alterar o dono da pasta, que pode continuar sendo o root.
+
+# chown –R root:professores teste
+
+
+O –R no exemplo faz com que a alteração seja aplicada de forma recursiva, afetando todos os arquivos e subpastas. Sem ele, a alteração seria aplicada apenas a pasta propriamente dita, mas não ao seu conteúdo. Em seguida, especificamos o novo dono e o novo grupo, separados por : seguido da pasta. Com isso as permissões serão alteradas para:
+
+drwxr-xr– root professores teste
+
+
+Falta agora alterar as permissões de acesso para o grupo, de forma que os usuários possam finalmente escrever na pasta. Para isso, usamos o comando chmod –R g+rw, que especifica que o grupo (g) terá permissão de leitura e escruta (+rw):
+
+chmod –R g+rw teste
+
+
+Se você quisesse fazer o oposto, ou seja, remover a permissão de escrita para o grupo, usaria o chmod –R g-w teste, se quisesse remover a permissão de leitura para todos os demais usuários usaria o chmod –R o-r e, se quisesse abrir as permissões para todo mundo, usaria o chmod –R ugo+rwx.
+
+Abaixo, segue uma pequena “cola” com os parâmetros:
+
+-R: Recursivo, altera as permissões de todo o conteúdo da pasta, opcional.
+u: Permissões para o dono da pasta (user)
+g: Permissões para o grupo (group)
+o: Permissões para os demais (others)
++: Adiciona a permissão
+-: Remove a permissão
+r: Permissão de leitura
+w: Permissão de gravação
+x: No caso dos arquivos indica permissão de escrita e, no caso da pasta, permissão para ver o conteúdo.
+
+Modo Octal
+Ao invés de utilizar os modos de permissão +r, -r, etc, pode ser usado o modo octal para se alterar a permissão de acesso a um arquivo. O modo octal é um conjunto de oito números onde cada número define um tipo de acesso diferente.
+
+O uso de um destes números define a permissão de acesso do dono, grupo ou outros usuários. Um modo fácil de entender como as permissões de acesso octais funcionam, é através da seguinte tabela:
+
+1 = Executar
+2 = Gravar
+4 = Ler
+A soma desses números define as permissões concedidas.
+
+É mais flexível gerenciar permissões de acesso usando o modo octal ao invés do comum, pois você especifica diretamente a permissão do dono, grupo, outros ao invés de gerenciar as permissões de cada um separadamente. Abaixo a lista de permissões de acesso octal:
+
+0 – Nenhuma permissão de acesso. Equivalente a -rwx.
+1 – Permissão de execução (x).
+2 – Permissão de gravação (w).
+3 – Permissão de gravação e execução (wx). Equivalente a permissão 2+1
+4 – Permissão de leitura (r).
+5 – Permissão de leitura e execução (rx). Equivalente a permissão 4+1
+6 – Permissão de leitura e gravação (rw). Equivalente a permissão 4+2
+7 – Permissão de leitura, gravação e execução. Equivalente a +rwx (4+2+1).
+
+
+HTTP Status Codes
+httpstatuses.com is an easy to reference database of HTTP Status Codes with their definitions and helpful code references all in one place. Visit an individual status code via httpstatuses.com/code or browse the list below.
+
+@ Share on Twitter⊕ Add to Pinboard
+1×× Informational
+100 Continue
+101 Switching Protocols
+102 Processing
+2×× Success
+200 OK
+201 Created
+202 Accepted
+203 Non-authoritative Information
+204 No Content
+205 Reset Content
+206 Partial Content
+207 Multi-Status
+208 Already Reported
+226 IM Used
+3×× Redirection
+300 Multiple Choices
+301 Moved Permanently
+302 Found
+303 See Other
+304 Not Modified
+305 Use Proxy
+307 Temporary Redirect
+308 Permanent Redirect
+4×× Client Error
+400 Bad Request
+401 Unauthorized
+402 Payment Required
+403 Forbidden
+404 Not Found
+405 Method Not Allowed
+406 Not Acceptable
+407 Proxy Authentication Required
+408 Request Timeout
+409 Conflict
+410 Gone
+411 Length Required
+412 Precondition Failed
+413 Payload Too Large
+414 Request-URI Too Long
+415 Unsupported Media Type
+416 Requested Range Not Satisfiable
+417 Expectation Failed
+418 I'm a teapot
+421 Misdirected Request
+422 Unprocessable Entity
+423 Locked
+424 Failed Dependency
+426 Upgrade Required
+428 Precondition Required
+429 Too Many Requests
+431 Request Header Fields Too Large
+444 Connection Closed Without Response
+451 Unavailable For Legal Reasons
+499 Client Closed Request
+5×× Server Error
+500 Internal Server Error
+501 Not Implemented
+502 Bad Gateway
+503 Service Unavailable
+504 Gateway Timeout
+505 HTTP Version Not Supported
+506 Variant Also Negotiates
+507 Insufficient Storage
+508 Loop Detected
+510 Not Extended
+511 Network Authentication Required
+599 Network Connect Timeout Error]
+
+
+
+comando para realizaer a copia de aquivos
+
+cp -v * /caminho/ate/chegar/ao/diretorio/desejado
+
+head para visualizar
+primeiras linhas
+head n10
+utimas linhas
+head -n10 /etc/passwd como 
+

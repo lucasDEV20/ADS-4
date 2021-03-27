@@ -1,0 +1,211 @@
+.
+└── pos
+    └── redes
+        └── segurança
+            └── linux
+                ├── distros
+                │   └── deblian
+                │       ├── kalli
+                │       └── ubuntu
+                ├── rhel
+                │   ├── centos
+                │   ├── fedora
+                │   └── suse
+                └── slackware
+                    └── slax
+
+.
+├── arq1
+├── arq2
+├── arq3
+├── arq4
+├── arq5
+└── redes
+    └── segurança
+        └── linux
+            ├── distros
+            │   └── deblian
+            │       ├── kalli
+            │       └── ubuntu
+            ├── rhel
+            │   ├── centos
+            │   ├── fedora
+            │   └── suse
+            └── slackware
+                └── slax
+
+13 directories, 5 files
+root@Computador:/home/senai/pos# ls
+arq1  arq2  arq3  arq4  arq5  redes
+root@Computador:/home/senai/pos# cp -v * redes/segurança/linux/distros/deblian/
+'arq1' -> 'redes/segurança/linux/distros/deblian/arq1'
+'arq2' -> 'redes/segurança/linux/distros/deblian/arq2'
+'arq3' -> 'redes/segurança/linux/distros/deblian/arq3'
+'arq4' -> 'redes/segurança/linux/distros/deblian/arq4'
+'arq5' -> 'redes/segurança/linux/distros/deblian/arq5'
+cp: -r not specified; omitting directory 'redes'
+root@Computador:/home/senai/pos# ls  * redes/segurança/linux/distros/deblian/
+root@Computador:/home/senai/pos# ls  redes/segurança/linux/distros/deblian/
+arq1  arq2  arq3  arq4  arq5  kalli  ubuntu
+root@Computador:/home/senai/pos# cd /debian
+-bash: cd: /debian: Not a directory
+root@Computador:/home/senai/pos#
+
+root@Computador:/home/senai/pos/redes/segurança/linux/distros/deblian# cd kalli/
+root@Computador:/home/senai/pos/redes/segurança/linux/distros/deblian/kalli# çs
+çs: command not found
+root@Computador:/home/senai/pos/redes/segurança/linux/distros/deblian/kalli# ls
+arq1  arq2  arq3  arq4  arq5  kalli
+root@Computador:/home/senai/pos/redes/segurança/linux/distros/deblian/kalli# mv -v * /slax
+mv: target '/slax' is not a directory
+root@Computador:/home/senai/pos/redes/segurança/linux/distros/deblian/kalli# mv -v * ./slax
+mv: target './slax' is not a directory
+root@Computador:/home/senai/pos/redes/segurança/linux/distros/deblian/kalli# mv -v arq1 ./slax
+renamed 'arq1' -> './slax'
+root@Computador:/home/senai/pos/redes/segurança/linux/distros/deblian/kalli# mv -v arq2 ./slax
+renamed 'arq2' -> './slax'
+root@Computador:/home/senai/pos/redes/segurança/linux/distros/deblian/kalli# mv -v arq3 ./slax
+renamed 'arq3' -> './slax'
+root@Computador:/home/senai/pos/redes/segurança/linux/distros/deblian/kalli# mv -v arq4 ./slax
+renamed 'arq4' -> './slax'
+root@Computador:/home/senai/pos/redes/segurança/linux/distros/deblian/kalli# mv -v arq5 ./slax
+renamed 'arq5' -> './slax'
+root@Computador:/home/senai/pos/redes/segurança/linux/distros/deblian/kalli# mv -v * ./slax
+mv: target './slax' is not a directory
+root@Computador:/home/senai/pos/redes/segurança/linux/distros/deblian/kalli# cd
+root@Computador:~# cd home
+-bash: cd: home: No such file or directory
+root@Computador:~# cd /home/senai/pos/redes/segurança/linux/
+root@Computador:/home/senai/pos/redes/segurança/linux# cd slackware/
+root@Computador:/home/senai/pos/redes/segurança/linux/slackware# ls
+slax
+root@Computador:/home/senai/pos/redes/segurança/linux/slackware# cd slax/
+root@Computador:/home/senai/pos/redes/segurança/linux/slackware/slax# ls
+root@Computador:/home/senai/pos/redes/segurança/linux/slackware/slax#
+
+
+0 directories, 0 files
+root@Computador:/home/senai/pos/redes/segurança/linux/slackware/slax# cd /home/senai/pos/redes/segurança/linux/
+root@Computador:/home/senai/pos/redes/segurança/linux# sudo rm -rf distros/
+root@Computador:/home/senai/pos/redes/segurança/linux# sudo rm -rf rhel/
+root@Computador:/home/senai/pos/redes/segurança/linux# sudo rm -rf slackware/
+root@Computador:/home/senai/pos/redes/segurança/linux# tree
+.
+
+0 directories, 0 files
+root@Computador:/home/senai/pos/redes/segurança/linux# cd
+root@Computador:~# cd /home/
+root@Computador:/home# cd senai/
+root@Computador:/home/senai# tree
+.
+└── pos
+    ├── arq1
+    ├── arq2
+    ├── arq3
+    ├── arq4
+    ├── arq5
+    └── redes
+        └── segurança
+            └── linux
+
+root@Computador:/home# cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,lucas_araujo
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:lucas_araujo
+fax:x:21:
+voice:x:22:
+cdrom:x:24:lucas_araujo
+floppy:x:25:lucas_araujo
+tape:x:26:
+sudo:x:27:lucas_araujo
+audio:x:29:lucas_araujo
+dip:x:30:lucas_araujo
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:lucas_araujo
+sasl:x:45:
+plugdev:x:46:lucas_araujo
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+systemd-timesync:x:104:
+crontab:x:105:
+messagebus:x:106:
+input:x:107:
+kvm:x:108:
+render:x:109:
+syslog:x:110:
+tss:x:111:
+uuidd:x:112:
+tcpdump:x:113:
+ssh:x:114:
+landscape:x:115:
+admin:x:116:
+netdev:x:117:lucas_araujo
+lxd:x:118:
+lucas_araujo:x:1000:
+ssl-cert:x:119:
+mlocate:x:120:
+vendas:x:1001:
+ti1:x:1002:
+ti:x:1003:
+compras:x:1005:
+pablo:x:1006:
+root@Computador:/home#
+
+
+==> /etc/passwd <==
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+root@Computador:/home#
+
+
+root@Computador:/home# head -n10 /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+root@Computador:/home# hea
+
+
+
+
+
+
