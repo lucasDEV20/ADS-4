@@ -14,7 +14,8 @@
             <td>{{c.email}}</td>
             <td>
                 <button class="btn btn-primary" (click)="selectContact(c)"> Mostrar detalhes</button>
-                <button class="btn btn-primary" (click)="deleteContact(c)"> Excluir</button>
+                <button class="btn btn-primary" (click)="deleteContact(c) "> Excluir</button>
+
             </td>
         </tr>
         <tbody>
@@ -44,6 +45,7 @@
             </p>
             <button *ngIf="edicao" class="btn btn-primary" (click)="salvar()"> Salvar</button>
             <button *ngIf="edicao" class="btn btn-primary" (click)="cancelar()"> Cancelar</button>
+
         </div>
 
     </div>

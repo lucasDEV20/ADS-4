@@ -22,5 +22,7 @@ export class DataService {
   public saveContact(contact): Observable<any> {
     return this.http.post(`${environment.url}/contact`, contact);
   }
+  
 
 }
+  
