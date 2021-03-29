@@ -36,7 +36,10 @@ public class CursoRest {
 	@DeleteMapping("/{id}")
 	public void delete(@PathVariable("id") Long id) {
 		cursoDao.deleteById(id);
-	}
+	 }
+	
+	
+	
 	
 	@PutMapping
 	public void put(@RequestBody Curso curso) {
