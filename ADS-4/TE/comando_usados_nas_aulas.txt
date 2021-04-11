@@ -384,3 +384,7 @@ head n10
 utimas linhas
 head -n10 /etc/passwd como 
 
+touch debian; touch suse; touch mandriva; touch slackware
+
+cp -v *  /home/livre/so/linox/firewall
+
